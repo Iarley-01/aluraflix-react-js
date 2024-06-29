@@ -1,5 +1,14 @@
+:root {
+  --cor-de-fundo: #262626;
+  --branco: #FFFFFF;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
+  background-color: var(--cor-de-fundo);
+  color: var(--branco);
 }
