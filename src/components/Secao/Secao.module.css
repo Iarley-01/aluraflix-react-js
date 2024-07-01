@@ -1,0 +1,11 @@
+.secaoTitulo {
+  display: inline-block;
+  border-radius: 10px;
+  width: 180px;
+  text-align: center;
+  padding: 14px 0;
+}
+
+.videosContainer {
+  display: flex;
+}
