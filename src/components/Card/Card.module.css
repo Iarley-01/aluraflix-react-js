@@ -1,0 +1,39 @@
+.card {
+  width: 300px;
+  border: 2px solid var(--front-end);
+  border-radius: 10px;
+  padding-bottom: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cardImage {
+  width: 100%;
+  border-bottom: 2px solid var(--front-end);
+  box-shadow: inset 0 0 12px 4px var(--azul);
+}
+
+
+.cardImage img {
+  width: 100%;
+}
+
+.containerBotoes {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 16px;
+}
+
+.containerBotoes button {
+  background-color: transparent;
+  border: none;
+  color: var(--branco);
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-weight: 700;
+  font-family: var(--fonte-source-sans);
+  font-size: 20px;
+}

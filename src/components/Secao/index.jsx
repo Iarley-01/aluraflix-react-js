@@ -1,5 +1,7 @@
 import styles from "./Secao.module.css";
 
+import Card from "@/components/Card";
+
 function Secao({ titulo }) {
   var corDeFundoDoTitulo;
   if (titulo == "front-end") {
@@ -16,7 +18,7 @@ function Secao({ titulo }) {
         {titulo.toUpperCase()}
       </h3>
       <div className={styles.videosContainer}>
-        
+        <Card />
       </div>
     </section>
   );
