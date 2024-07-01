@@ -1,6 +1,14 @@
 :root {
   --cor-de-fundo: #262626;
   --branco: #FFFFFF;
+  --azul: #2271D1;
+  --cinza: #001233;
+  --error: #E53935;
+  --front-end: #6BD1FF;
+  --back-end: #00C86F;
+  --amarelo: #FFBA05;
+  
+  --fonte-source-sans: "Source Sans 3", sans-serif;
 }
 
 * {
