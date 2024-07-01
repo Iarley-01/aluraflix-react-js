@@ -19,6 +19,11 @@ function Secao({ titulo }) {
       </h3>
       <div className={styles.videosContainer}>
         <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </div>
     </section>
   );
