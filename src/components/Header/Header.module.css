@@ -3,4 +3,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #000000;
+  padding: 20px 0;
+}
+
+.header nav {
+  display: flex;
+  gap: 24px;
 }

@@ -4,17 +4,19 @@ import styles from "./Header.module.css";
 
 import logo from "./aluraflix-logo.png";
 
+import Botao from "@/components/Botao";
+
 function Header() {
   return (
     <header className={styles.header}>
       <img src={logo} alt="Logo do Aluraflix" />
       <nav>
-        <Link>
-          Home
-        </Link>
-        <Link>
-          Novo Vídeo
-        </Link>
+        <Botao to="/">
+          HOME
+        </Botao>
+        <Botao to="/novo">
+          NOVO VÍDEO
+        </Botao>
       </nav>
     </header>
   );

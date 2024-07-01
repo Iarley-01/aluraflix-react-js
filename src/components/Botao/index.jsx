@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom";
 import styles from "./Botao.module.css";
 
-
-function Botao({children}) {
+function Botao({children, to}) {
   return (
     <NavLink
-      className={({ isActive }) => `${styles.link} ${isActive ? styles.linkAtivo : ""}`}
+      className={({ isActive }) => `${styles.linkBotao} ${isActive ? styles.linkAtivo : ""}`}
+      to={to}
     >
       {children}
     </NavLink>
