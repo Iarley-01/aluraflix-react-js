@@ -3,8 +3,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #000000;
+  background-color: var(--preto);
   padding: 20px 0;
+  border-bottom: 2px solid var(--azul);
+  box-shadow: 0 5px 29px 0 var(--azul);
 }
 
 .header nav {
