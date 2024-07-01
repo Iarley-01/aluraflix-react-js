@@ -1,0 +1,47 @@
+.banner {
+  display: none;
+}
+
+.card {
+  display: flex;
+  justify-content: space-around;
+}
+
+.textWrapper {
+  color: var(--branco);
+  width: 50%;
+}
+
+.textWrapper h1 {
+  background-color: var(--front-end);
+  border-radius: 16px;
+  display: inline-block;
+  font-size: 48px;
+  padding: 16px;
+  margin: 0 0 20px 0;
+}
+
+.textWrapper h2 {
+  font-size: 46px;
+}
+
+.textWrapper p {
+  font-size: 18px;
+}
+
+.textWrapper iframe {
+  height: 332px;
+}
+
+@media(min-width: 600px){
+  .banner {
+    height: 100vh;
+    max-height: 590px;
+    background-image: url("./player.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
