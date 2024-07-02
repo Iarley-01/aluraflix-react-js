@@ -3,6 +3,8 @@
   text-align: center;
   background-color: var(--preto);
   padding: 16px 0;
+  display: flex;
+  justify-content: center;
 }
 
 .logo {
@@ -25,4 +27,14 @@
 .navigation button img {
   width: 28px;
   height: 28px;
+}
+
+@media(min-width: 600px){
+  .logo {
+    display: block;
+  }
+  
+  .navigation {
+    display: none;
+  }
 }
