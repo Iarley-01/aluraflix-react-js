@@ -1,11 +1,22 @@
 import styles from "./Footer.module.css";
 
+import Botao from "@/components/Botao";
+
 function Footer() {
+  var rota = "/";
+  var icone = "/imagens/home-ativo.png";
+  if (rota != "/") {
+    icone = "imagens/home.png";
+  }
+
   return (
     <footer className={styles.footer}>
-      <img src="/imagens/aluraflix-logo.png" alt="logo do Aluraflix" />
-      <div>
-        <button><img src="/imagens/home.png" alt="Ícone Home" /> HOME</button>
+      <img className={styles.logo} src="/imagens/aluraflix-logo.png" alt="logo do Aluraflix" />
+      <div className={styles.navigation}>
+        <Botao to="/">
+          <img src={icone} alt="Ícone home"/>
+          HOME
+        </Botao>
         <img src="/imagens/adicionar.png" alt="Ícone adicionar" />
       </div>
     </footer>

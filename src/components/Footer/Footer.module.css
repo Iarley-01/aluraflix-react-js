@@ -1,0 +1,28 @@
+.footer {
+  width: 100%;
+  text-align: center;
+  background-color: var(--preto);
+  padding: 16px 0;
+}
+
+.logo {
+  display: none;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.navigation Botao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.navigation button img {
+  width: 28px;
+  height: 28px;
+}
