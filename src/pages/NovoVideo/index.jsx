@@ -1,5 +1,7 @@
 import styles from "./NovoVideo.module.css";
 
+import Campo from "@/components/Campo";
+
 function NovoVideo() {
   return (
     <section className={styles.container}>
@@ -7,6 +9,8 @@ function NovoVideo() {
       <p>COMPLETE O FORMULÁRIO PARA CRIAR UM NOVO CARD DE VÍDEO</p>
       <form>
         <h3>Criar Card</h3>
+        
+        <Campo label="Título" placeholder="Título do vídeo..." />
       </form>
     </section>
   );
