@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import styles from "./Footer.module.css";
 
 import Botao from "@/components/Botao";
@@ -17,7 +19,9 @@ function Footer() {
           <img src={icone} alt="Ícone home"/>
           HOME
         </Botao>
-        <img src="/imagens/adicionar.png" alt="Ícone adicionar" />
+        <Link to="/novo">
+          <img src="/imagens/adicionar.png" alt="Ícone adicionar" />
+        </Link>
       </div>
     </footer>
   );
