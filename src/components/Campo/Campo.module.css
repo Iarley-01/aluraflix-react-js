@@ -1,0 +1,12 @@
+.campoTexto {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.campoTexto input {
+  background-color: var(--cor-de-fundo);
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+}

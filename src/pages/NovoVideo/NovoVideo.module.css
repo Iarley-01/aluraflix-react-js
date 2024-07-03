@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--preto);
+}
+
+.container h2 {
+  margin-top: 30px;
+}
+
+.container p {
+  margin: 30px 0;
+}
+
+.formulario h3 {
+  border-top: 2px solid var(--cor-de-fundo);
+  border-bottom: 2px solid var(--cor-de-fundo);
+  padding: 16px 0;
+  font-size: 32px;
+  margin-bottom: 30px;
+  width: 500px;
+  max-width: 300px;
+}
