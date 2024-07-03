@@ -14,6 +14,12 @@ function NovoVideo() {
         <Campo label="Título" placeholder="Título do vídeo..." tamanho="60" />
         
         <ListaSuspensa />
+        
+        <Campo label="Imagem" placeholder="URL da imagem do vídeo..." tamanho="60" />
+        
+        <Campo label="Vídeo" placeholder="Link do vídeo..." tamanho="60" />
+        
+        <Campo label="Descrição" placeholder="Do que se trata esse vídeo?" tamanho="120" />
       </form>
     </section>
   );
