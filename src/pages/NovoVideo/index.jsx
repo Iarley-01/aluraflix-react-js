@@ -1,6 +1,7 @@
 import styles from "./NovoVideo.module.css";
 
 import Campo from "@/components/Campo";
+import ListaSuspensa from "@/components/ListaSuspensa";
 
 function NovoVideo() {
   return (
@@ -10,7 +11,9 @@ function NovoVideo() {
       <form className={styles.formulario}>
         <h3>Criar Card</h3>
         
-        <Campo label="Título" placeholder="Título do vídeo..." />
+        <Campo label="Título" placeholder="Título do vídeo..." tamanho="60" />
+        
+        <ListaSuspensa />
       </form>
     </section>
   );

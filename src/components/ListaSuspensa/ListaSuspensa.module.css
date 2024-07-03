@@ -1,0 +1,13 @@
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.campo select {
+  background-color: var(--cor-de-fundo);
+  border-radius: 10px;
+  height: 60px;
+  border: none;
+  color: var(--branco);
+}
