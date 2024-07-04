@@ -1,0 +1,29 @@
+button {
+  background: transparent;
+  border-radius: 10px;
+  color: var(--branco);
+  width: 140px;
+  padding: 10px 0;
+  font-size: 24px;
+  border: none;
+}
+
+button[type="submit"] {
+  border: 2px solid var(--azul);
+}
+
+button[type="submit"]:hover {
+  color: var(--azul);
+  background-color: var(--branco);
+  border: 2px solid var(--branco);
+}
+
+button[type="reset"] {
+  border: 2px solid var(--branco);
+}
+
+button[type="reset"]:hover {
+  color: var(--azul);
+  box-shadow: inset 0 0 12px 4px var(--azul);
+  border: 2px solid var(--azul);
+}

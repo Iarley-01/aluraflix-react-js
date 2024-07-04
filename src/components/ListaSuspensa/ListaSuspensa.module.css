@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  width: 90%;
 }
 
 .campo select {
@@ -10,4 +11,5 @@
   height: 60px;
   border: none;
   color: var(--branco);
+  width: 100%;
 }

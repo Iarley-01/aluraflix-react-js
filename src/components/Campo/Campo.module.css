@@ -2,10 +2,13 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  width: 90%;
 }
 
 .campoTexto input {
   background-color: var(--cor-de-fundo);
   border-radius: 10px;
   border: none;
+  color: var(--branco);
+  width: 100%;
 }

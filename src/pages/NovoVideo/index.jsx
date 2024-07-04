@@ -2,6 +2,7 @@ import styles from "./NovoVideo.module.css";
 
 import Campo from "@/components/Campo";
 import ListaSuspensa from "@/components/ListaSuspensa";
+import BotaoPadrao from "@/components/BotaoPadrao";
 
 function NovoVideo() {
   return (
@@ -20,6 +21,11 @@ function NovoVideo() {
         <Campo label="Vídeo" placeholder="Link do vídeo..." tamanho="60" />
         
         <Campo label="Descrição" placeholder="Do que se trata esse vídeo?" tamanho="120" />
+        
+        <div className={styles.buttons}>
+          <BotaoPadrao type="submit">Salvar</BotaoPadrao>
+          <BotaoPadrao type="reset">Limpar</BotaoPadrao>
+        </div>
       </form>
     </section>
   );
