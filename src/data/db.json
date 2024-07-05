@@ -1,0 +1,149 @@
+{
+  "categorias": [
+    {
+      "id": 1,
+      "nome": "Front End",
+      "cor": "#6BD1FF"
+    },
+    {
+      "id": 2,
+      "nome": "Back End",
+      "cor": "#00C86F"
+    },
+    {
+      "id": 3,
+      "nome": "Mobile",
+      "cor": "#FFBA05"
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoria": 1,
+      "img": "https://img.youtube.com/vi/ZY3-MFxVdEw/maxresdefault.jpg",
+      "titulo": "O que faz uma desenvolvedora front-end?",
+      "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw",
+      "descricao": "O que é Front-end? Trabalhando na área os termos HTML, CSS e JavaScript fazem parte da rotina das desenvolvedoras e desenvolvedores. Mas o que eles fazem, afinal? Descubra com a Vanessa nesse episódio!"
+    },
+    {
+      "id": 2,
+      "categoria": 1,
+      "img": "https://img.youtube.com/vi/c8mVlakBESE/maxresdefault.jpg",
+      "titulo": "SEO com React",
+      "url": "https://www.youtube.com/watch?v=c8mVlakBESE",
+      "descricao": "Eu to aqui pra nesse vídeo dizer que a gente vai aprender a começar uma app inspirada no desenho Pokémon com Nextjs e React, ver algumas dicas sobre performance e de quebra conhecer uma plataforma sensacional pra fazer deploy que é a Vercel. Tudo em 22 minutos nesse vídeo feito com todo o carinho do mundo construindo uma Pokedex! 😍 bora ver?"
+    },
+    {
+      "id": 3,
+      "categoria": 1,
+      "img": "https://img.youtube.com/vi/LatCKpcOMak/maxresdefault.jpg",
+      "titulo": "Componentização com VanillaJS ",
+      "url": "https://www.youtube.com/watch?v=LatCKpcOMak",
+      "descricao": "Neste Alura+, a Juliana Negreiros fala sobre componentização de telas com VanillaJS sem utilizar nenhum framework! Ela explica como você pode trabalhar com os componentes além de como analisar seus elementos e sua composição, tudo isso com exemplos práticos. Confira!"
+    },
+    {
+      "id": 4,
+      "categoria": 1,
+      "img": "https://img.youtube.com/vi/ORI_HTXaIw0/maxresdefault.jpg",
+      "titulo": "Template String JavaScript ",
+      "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0",
+      "descricao": "Como funciona o Template String no JavaScript? O instrutor Felipe Nascimento fala exatamente sobre isso neste Alura+ e explica o uso desta funcionalidade com exemplos práticos. Confira!"
+    },
+    {
+      "id": 5,
+      "categoria": 1,
+      "img": "https://img.youtube.com/vi/34uHo7hFmG0/maxresdefault.jpg",
+      "titulo": "Novidades do Angular v9",
+      "url": "https://www.youtube.com/watch?v=34uHo7hFmG0",
+      "descricao": "Mais um vídeo da série sobre Angular v9 e Angular Ivy! Esse tutorial é uma dica rápida mostrando as duas maiores novidades to TypeScript 3.7 que é o operador de optional chaining e o operador de coalescência nula."
+    },
+    {
+      "id": 6,
+      "categoria": 1,
+      "img": "https://img.youtube.com/vi/QzDjdlF1BQI/maxresdefault.jpg",
+      "titulo": "Base para aprender os frameworks",
+      "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI",
+      "descricao": "Nesse vídeo, vamos fazer um mini render com JavaScript puro na unha, passando pelas principais ideias que os frameworks trabalham enquanto vemos features super importantes do JavaScript pra conseguir trabalhar com outras ferramentas depois."
+    },
+    {
+      "id": 7,
+      "categoria": 2,
+      "img": "https://img.youtube.com/vi/DaSJ7tIGnQs/maxresdefault.jpg",
+      "titulo": "As melhores tecnologias para desenvolvimento Mobile",
+      "url": "https://www.youtube.com/watch?v=DaSJ7tIGnQs",
+      "descricao": "Se existe uma área da programação que cresceu MUITO nos últimos anos, foi o DESENVOLVIMENTO MOBILE"
+    },
+    {
+      "id": 8,
+      "categoria": 2,
+      "img": "https://img.youtube.com/vi/COY5vTa778g/maxresdefault.jpg",
+      "titulo": "Como Se Tornar Um Desenvolvedor MOBILE em 2024?",
+      "url": "https://www.youtube.com/watch?v=COY5vTa778g",
+      "descricao": "Um desenvolvedor mobile é um profissional que cria aplicativos para smartphones e tablets e smartwatchs usando linguagens como Kotlin, Java, Swift, Dart, C# e Javascript. Uma área em constante crescimento que vem passando por muitas transformações nos últimos anos."
+    },
+    {
+      "id": 9,
+      "categoria": 2,
+      "img": "https://img.youtube.com/vi/0_-6xnOyxSo/maxresdefault.jpg",
+      "titulo": "Chegou a Vez do Kotlin em 2024?",
+      "url": "https://www.youtube.com/watch?v=0_-6xnOyxSo",
+      "descricao": "Depois de 12 anos, Kotlin é a linguagens de programação utilizadas no desenvolvimento Android e trouxe muitas novidades em 2023 que vão provavelmente colocar ela em um outro patamar. Estamos vendo ela rivalizar não só com Java mas com linguagens estabelecidas em outras plataformas. Analisamos algumas características marcantes da linguagem e também o mercado no exterior e também para desenvolvedores no Brasil. "
+    },
+    {
+      "id": 10,
+      "categoria": 2,
+      "img": "https://img.youtube.com/vi/xU2r-dSdN1o/maxresdefault.jpg",
+      "titulo": "O que eu faço como Desenvolvedor Mobile",
+      "url": "https://www.youtube.com/watch?v=xU2r-dSdN1o",
+      "descricao": "Começando na Programação por Desenvolvimento de Aplicativos, porque tu não precisa começar por desenvolvimento web"
+    },
+    {
+      "id": 11,
+      "categoria": 2,
+      "img": "https://img.youtube.com/vi/JG2lcJeQuO8/maxresdefault.jpg",
+      "titulo": "Criando Aplicativo Profissional do zero",
+      "url": "https://www.youtube.com/watch?v=JG2lcJeQuO8",
+      "descricao": "Como Criar um Aplicativo? Como Criar Um Aplicativo Profissional? Como Criar Um Aplicativo Profissional com Programação? Bem essas perguntas serão respondidas neste mini curso completo com 7 horas de duração. Neste mini curso vamos aprender a técnica de desenvolvimento híbrido, que utiliza linguagens de programação como HTML, CSS, JavaScript para criar aplicativos para Android, usando o Apache Cordova. Vamos fazer um projeto prático do início ao fim. "
+    },
+    {
+      "id": 12,
+      "categoria": 2,
+      "img": "https://img.youtube.com/vi/HxWKTF-Sv9w/maxresdefault.jpg",
+      "titulo": "Como ser um dev android profissional",
+      "url": "https://www.youtube.com/watch?v=HxWKTF-Sv9w",
+      "descricao": "Como ser um dev android profissional. Nesse vídeo eu te falo como aprender android de graça."
+    },
+    {
+      "id": 13,
+      "categoria": 3,
+      "img": "https://i3.ytimg.com/vi/fWscDFHKgw8/maxresdefault.jpg",
+      "titulo": "Desenvolvendo Android",
+      "url": "https://www.youtube.com/watch?v=fWscDFHKgw8",
+      "descricao": "Um episódio focado no desenvolvimento de aplicações Android. Neste bate-papo, Paulo Silveira e Felipe Torres conversam sobre os primeiros passos para começar a desenvolver, quais as principais ferramentas do desenvolvimento mobile, como colocar sua aplicação no ar e mais!"
+    },
+    {
+      "id": 14,
+      "categoria": 3,
+      "img": "https://i3.ytimg.com/vi/MGIs7DSQ-0A/maxresdefault.jpg",
+      "titulo": "Desenvolvimento IOS pra iniciantes",
+      "url": "https://www.youtube.com/watch?v=MGIs7DSQ-0A",
+      "descricao": "Por onde começar em iOS? Qual linguagem é importante dominar? Quais ferramentas necessárias para mergulhar no desenvolvimento iOS?"
+    },
+    {
+      "id": 15,
+      "categoria": 3,
+      "img": "https://i3.ytimg.com/vi/X-XfVvd41O8/maxresdefault.jpg",
+      "titulo": "Como se tornar um DESENVOLVEDOR MOBILE?",
+      "url": "https://www.youtube.com/watch?v=X-XfVvd41O8",
+      "descricao": "Grande parte da experiência de serviços hoje, passa pelo mobile, isso pela praticidade de estarmos o tempo todo conectados. Isso faz com que haja uma demanda crescente por profissionais capacitados para desenvolver essas aplicações."
+    },
+    {
+      "id": 16,
+      "categoria": 3,
+      "img": "https://i3.ytimg.com/vi/BJEACwKXWf8/maxresdefault.jpg",
+      "titulo": "Como utilizar o SQLite no React Nativa com Expo",
+      "url": "https://www.youtube.com/watch?v=BJEACwKXWf8",
+      "descricao": "Neste vídeo você irá ver na prática como utilizar o SQLite no React Native com Expo."
+    }
+  ]
+}

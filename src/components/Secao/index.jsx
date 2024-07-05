@@ -1,16 +1,25 @@
+import { useEffect } from "react";
+
 import styles from "./Secao.module.css";
 
 import Card from "@/components/Card";
 
-function Secao({ titulo }) {
-  var corDeFundoDoTitulo;
-  if (titulo == "front-end") {
+function Secao({ titulo, cor }) {
+  /*useEffect(() => {
+    fetch("https://my-json-server.typicode.com/Iarley-01/api-aluraflix/categorias")
+      .then(response => response.json())
+      .then(console.log(response))
+  })*/
+  
+  var corDeFundoDoTitulo = { backgroundColor: `${cor}`};
+  var corDoCard = cor;
+  /*if (titulo == "front-end") {
     corDeFundoDoTitulo = { backgroundColor: "var(--front-end)"} 
   } else if (titulo == "back-end") {
     corDeFundoDoTitulo = { backgroundColor: "var(--back-end)"} 
   } else {
     corDeFundoDoTitulo = { backgroundColor: "var(--amarelo)"} 
-  }
+  }*/
   
   return (
     <section className={styles.secao}>
@@ -18,12 +27,7 @@ function Secao({ titulo }) {
         {titulo.toUpperCase()}
       </h3>
       <div className={styles.videosContainer}>
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+        <Card cor={corDoCard} />
       </div>
     </section>
   );
