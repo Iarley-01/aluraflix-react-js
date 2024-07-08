@@ -26,7 +26,7 @@ function NovoVideo() {
         
         <Campo valor={tituloVideo} label="Título" placeholder="Título do vídeo..." tamanho="60" />
         
-        <ListaSuspensa itens={secoes} />
+        <ListaSuspensa itens={secoes.map(secao => secao.nome)} valor={secaoVideo}/>
         
         <Campo valor={imagemVideo} label="Imagem" placeholder="URL da imagem do vídeo..." tamanho="60" />
         
