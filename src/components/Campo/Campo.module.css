@@ -5,6 +5,10 @@
   width: 90%;
 }
 
+.campoTexto label {
+  color: var(--branco);
+}
+
 .campoTexto input {
   background-color: var(--cor-de-fundo);
   border-radius: 10px;

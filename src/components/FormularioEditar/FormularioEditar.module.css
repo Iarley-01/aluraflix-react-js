@@ -1,0 +1,21 @@
+.formEditar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.inputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}

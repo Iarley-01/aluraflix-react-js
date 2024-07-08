@@ -5,6 +5,10 @@
   width: 90%;
 }
 
+.campo label {
+  color: var(--branco);
+}
+
 .campo select {
   background-color: var(--cor-de-fundo);
   border-radius: 10px;

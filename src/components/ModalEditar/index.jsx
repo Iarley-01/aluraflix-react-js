@@ -1,6 +1,8 @@
 import styles from "./ModalEditar.module.css";
 import { useVideosContext } from "@/contexts/VideosContext";
 
+import FormularioEditar from "@/components/FormularioEditar";
+
 function ModalEditar() {
   const { cardSelecionado, setCardSelecionado } = useVideosContext();
   
@@ -8,12 +10,13 @@ function ModalEditar() {
     <>
     {cardSelecionado && <div className={styles.overlay}>
       <dialog className={styles.formDialog} open={!!cardSelecionado} onClose={() => setCardSelecionado(null)}>
-        <h1>Modal</h1>
+        <h1>Editar Vídeo</h1>
         <form method="dialog">
-          <button formMethod="dialog">
+          <button className={styles.iconeFechar} formMethod="dialog">
             <img src="/imagens/close.png" alt="Ícone Fechar" />
           </button>
         </form>
+        <FormularioEditar />
       </dialog>
     </div>}
     </>
