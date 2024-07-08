@@ -1,6 +1,6 @@
 import styles from "./Campo.module.css";
 
-function Campo({ label, placeholder, tamanho }) {
+function Campo({ label, placeholder, tamanho, valor }) {
   const placeholderModificada = `${placeholder}`;
   const alturaDoCampo = { height: `${tamanho}px`};
   return (
