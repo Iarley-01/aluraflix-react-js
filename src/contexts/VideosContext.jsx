@@ -5,6 +5,7 @@ export const VideosContext = createContext();
 export default function VideosProvider({ children }) {
   const [cards, setCards] = useState([]);
   const [secoes, setSecoes] = useState([]);
+  const [cardSelecionado, setCardSelecionado] = useState(null);
   
   useEffect(() => {
     fetch("https://my-json-server.typicode.com/Iarley-01/api-aluraflix/videos")
@@ -20,12 +21,14 @@ export default function VideosProvider({ children }) {
   
   
   return (
-    <VideosContext.Provider value={
-      {cards,
+    <VideosContext.Provider value={{
+      cards,
       setCards,
       secoes,
-      setSecoes}
-    }
+      setSecoes,
+      cardSelecionado,
+      setCardSelecionado
+      }}
     >
       {children}
     </VideosContext.Provider>
@@ -33,12 +36,14 @@ export default function VideosProvider({ children }) {
 }
 
 export function useVideosContext(){
-  const { secoes, setSecoes, cards, setCards } = useContext(VideosContext);
+  const { secoes, setSecoes, cards, setCards, cardSelecionado, setCardSelecionado } = useContext(VideosContext);
 
   return {
     secoes,
     setSecoes,
     cards,
-    setCards
+    setCards,
+    cardSelecionado,
+    setCardSelecionado
   }
 }
