@@ -16,7 +16,10 @@ function ModalEditar() {
             <img src="/imagens/close.png" alt="Ícone Fechar" />
           </button>
         </form>
-        <FormularioEditar />
+        <FormularioEditar 
+          card={cardSelecionado}
+          onClose={setCardSelecionado}
+        />
       </dialog>
     </div>}
     </>

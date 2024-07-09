@@ -1,14 +1,14 @@
 import styles from "./Campo.module.css";
 
-function Campo({ label, placeholder, tamanho, valor }) {
+function Campo({ name, label, placeholder, tamanho, novoVideo, aoAlterar }) {
   const placeholderModificada = `${placeholder}`;
   const alturaDoCampo = { height: `${tamanho}px`};
   return (
     <div className={styles.campoTexto}>
-      <label>
+      <label htmlFor={name}>
         {label}
       </label>
-      <input type="text" required placeholder={placeholderModificada} style={alturaDoCampo} />
+      <input id={name} name={name} type="text" required placeholder={placeholderModificada} style={alturaDoCampo} value={novoVideo} onChange={aoAlterar} />
     </div>
   );
 }
