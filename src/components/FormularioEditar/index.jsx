@@ -10,30 +10,31 @@ import ListaSuspensa from "@/components/ListaSuspensa";
 import BotaoPadrao from "@/components/BotaoPadrao";
 
 function FormularioEditar({ card, onClose }) {
-  const { secoes } = useVideosContext();
+  const { secoes, setCards } = useVideosContext();
 
   const [novoVideo, setNovoVideo] = useState(card);
-//   const [tituloVideo, setTituloVideo] = useState("");
-//   const [secaoVideo, setSecaoVideo] = useState("");
-//   const [imagemVideo, setImagemVideo] = useState("");
-//   const [linkVideo, setLinkVideo] = useState("");
-//   const [descricaoVideo, setDescricaoVideo] = useState("");
   
   console.log(novoVideo);
-  
   function buscaCategoriaNome(id) {
     if (!id) {
       return "";
-    }
+    } else {
     const categoria = secoes.filter(secao => secao.id == id);
     var nome = categoria.map(categoria => categoria.nome)
     var nomeFormatado = nome[0];
     return nomeFormatado;
+    }
   }
   
-  const cardCategoria = (buscaCategoriaNome(novoVideo.categoria));
-  console.log(cardCategoria);
+  function buscaCategoriaId(nomeCategoria) {
+    var categoria = secoes.filter(secao => secao.nome == nomeCategoria);
+    var idCategoria = categoria.map(categoria => categoria.id);
+    var idFormatado = idCategoria[0];
+    return idFormatado;
+  }
   
+  const cardCategoria = buscaCategoriaNome(novoVideo.categoria);
+
   const limparFormulario = (setNovoVideo) => {
     setNovoVideo({
       titulo: "",
@@ -49,8 +50,30 @@ function FormularioEditar({ card, onClose }) {
     setNovoVideo((prevData) => ({ ...prevData, [name]: value }));
   }
   
+  
   const aoAlternarCategoria = (categoria) => {
-    setNovoVideo({ ...novoVideo, categoria: categoria.value });
+    const novoValor = buscaCategoriaId(categoria);
+    setNovoVideo({ ...novoVideo, categoria: novoValor });
+  }
+  
+  const aoEnviarFormulario = async (event) => {
+    event.preventDefault();
+    try {
+      const response = await fetch(`https://my-json-server.typicode.com/Iarley-01/api-aluraflix/videos/${card.id}`, {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(novoVideo)
+    });
+    const dados = await response.json();
+    onClose(null);
+    setCards(prevCards => prevCards.map(c => c.id == card.id ? { ...c, ...dados } : c))
+      
+    } catch(error) {
+      console.error("Erro ao atualizar vídeo: ", error);
+    }
+    console.log(novoVideo);
   }
   
   const aoLimparFormulario = (event) => {
@@ -71,7 +94,7 @@ function FormularioEditar({ card, onClose }) {
          aoAlterar={aoAlterarValor}
         />
         <ListaSuspensa novoVideo={cardCategoria}
-         itens={secoes} aoAlterar={aoAlternarCategoria} />
+         itens={secoes} aoAlterar={ aoAlternarCategoria} />
         <Campo
          name="imagem"
          label="Imagem"
@@ -100,7 +123,7 @@ function FormularioEditar({ card, onClose }) {
          aoAlterar={aoAlterarValor}
         />
         <div className={styles.buttons}>
-          <button type="submit">Salvar</button>
+          <button onClick={aoEnviarFormulario} type="submit">Salvar</button>
           <button onClick={aoLimparFormulario} type="reset">Limpar</button>
         </div>
       </div>
