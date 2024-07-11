@@ -4,7 +4,7 @@ import styles from "./Secao.module.css";
 
 import Card from "@/components/Card";
 
-function Secao({ titulo, cor, cards }) {
+function Secao({ titulo, cor, cards, aoDeletarCard }) {
   
   
   var corDeFundoDoTitulo = { backgroundColor: `${cor}`};
@@ -16,7 +16,7 @@ function Secao({ titulo, cor, cards }) {
         {titulo.toUpperCase()}
       </h3>
       <div className={styles.videosContainer}>
-        {cards.map(card => <Card key={card.id}  cor={corDoCard} card={card} />)}
+        {cards.map(card => <Card key={card.id}  cor={corDoCard} card={card} onDelete={aoDeletarCard} />)}
       </div>
     </section>
   );
