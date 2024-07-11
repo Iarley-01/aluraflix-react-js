@@ -41,3 +41,10 @@
     top: 100px;
   }
 }
+
+@media(max-width: 500px) {
+  .formDialog {
+    position: relative;
+    overflow: scroll;
+  }
+}
