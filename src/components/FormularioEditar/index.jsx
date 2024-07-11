@@ -13,6 +13,7 @@ function FormularioEditar({ card, onClose }) {
   const { secoes, setCards } = useVideosContext();
 
   const [novoVideo, setNovoVideo] = useState(card);
+  console.log(card)
   
   function buscaCategoriaNome(id) {
     if (!id) {
@@ -38,7 +39,7 @@ function FormularioEditar({ card, onClose }) {
     setNovoVideo({
       titulo: "",
       categoria: "",
-      img: "",
+      imagem: "",
       url: "",
       descricao: "",
     });
@@ -47,6 +48,7 @@ function FormularioEditar({ card, onClose }) {
   const aoAlterarValor = (event) => {
     const { name, value } = event.target;
     setNovoVideo((prevData) => ({ ...prevData, [name]: value }));
+    console.log(name)
   }
   
   
@@ -94,7 +96,7 @@ function FormularioEditar({ card, onClose }) {
         <ListaSuspensa novoVideo={cardCategoria}
          itens={secoes} aoAlterar={ aoAlternarCategoria} />
         <Campo
-         name="imagem"
+         name="img"
          label="Imagem"
          placeholder="URL da imagem do vídeo..."
          tamanho="60"
@@ -103,7 +105,7 @@ function FormularioEditar({ card, onClose }) {
          aoAlterar={aoAlterarValor}
         />
         <Campo
-         name="video"
+         name="url"
          label="Vídeo"
          placeholder="URL da vídeo..."
          tamanho="60"
