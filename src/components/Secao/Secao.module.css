@@ -13,7 +13,17 @@
 
 .videosContainer {
   display: flex;
-  overflow: scroll;
-  scroll-padding: 20px;
+  overflow-x: scroll;
   gap: 12px;
+  padding-bottom: 16px;
+}
+
+.videosContainer::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+.videosContainer::-webkit-scrollbar-thumb {
+  background: #2271D1;
+  border-radius: 20px;
 }
