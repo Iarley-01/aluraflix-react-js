@@ -8,6 +8,7 @@ import { useVideosContext } from "./contexts/VideosContext";
 
 import Home from "./pages/Home";
 import NovoVideo from "./pages/NovoVideo";
+import NaoEncontrada from "./pages/NaoEncontrada";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -23,6 +24,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/novo" element={<NovoVideo />} />
+          <Route path="*" element={<NaoEncontrada />} />
         </Routes>
         <ModalEditar />
       </VideosContext>
