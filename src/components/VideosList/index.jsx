@@ -10,7 +10,7 @@ function VideosList() {
   const { cards, setCards, secoes, setSecoes } = useVideosContext();
   
   return (
-    <section classList={styles.containerSecoes}>
+    <section className={styles.containerSecoes}>
       {secoes.map(secao => 
       <Secao 
        titulo={secao.nome} 

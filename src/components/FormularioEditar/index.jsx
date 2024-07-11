@@ -14,7 +14,6 @@ function FormularioEditar({ card, onClose }) {
 
   const [novoVideo, setNovoVideo] = useState(card);
   
-  console.log(novoVideo);
   function buscaCategoriaNome(id) {
     if (!id) {
       return "";
@@ -73,7 +72,6 @@ function FormularioEditar({ card, onClose }) {
     } catch(error) {
       console.error("Erro ao atualizar vídeo: ", error);
     }
-    console.log(novoVideo);
   }
   
   const aoLimparFormulario = (event) => {

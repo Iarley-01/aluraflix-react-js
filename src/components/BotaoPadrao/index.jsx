@@ -1,8 +1,8 @@
 import styles from "./BotaoPadrao.module.css";
 
-function BotaoPadrao({ children, type }) {
+function BotaoPadrao({ children, type, salvarVideo = false, onClick }) {
   return (
-    <button type={type}>{children}</button>
+    <button type={type} onClick={onClick}>{children}</button>
   );
 }
 
