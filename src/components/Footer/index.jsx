@@ -6,10 +6,15 @@ import Botao from "@/components/Botao";
 
 function Footer() {
   var rota = "/";
-  var icone = "/imagens/home-ativo.png";
-  var iconeAdicionar = "/imagens/adicionar.png";
-  if (rota != "/") {
-    icone = "imagens/home.png";
+  var icone = "";
+  var iconeAdicionar = "";
+  if (rota == "/") {
+    icone = "/imagens/home-ativo.png";
+    iconeAdicionar = "/imagens/adicionar.png";
+  } 
+  
+  if(rota=="/novo") {
+    icone = "/imagens/home.png"
     iconeAdicionar = "/imagens/adicionar-ativo.png";
   }
 
