@@ -39,7 +39,7 @@ function FormularioEditar({ card, onClose }) {
     setNovoVideo({
       titulo: "",
       categoria: "",
-      imagem: "",
+      img: "",
       url: "",
       descricao: "",
     });
